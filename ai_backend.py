@@ -219,8 +219,8 @@ def extract_memories_from_history(history: History, max_new: int = 5) -> List[st
     Ask the model to extract important, reusable "memories" from the conversation.
 
     Returns a list of strings, each a short memory like:
-      - "User lives in Torrance, California."
-      - "User prefers responses in Japanese with furigana."
+      - "User lives in Anytown, California."
+      - "User prefers responses in Japanese."
     """
     # Don’t include the initial system message, just the dialog
     dialog = history[1:]
